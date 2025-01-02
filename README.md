@@ -19,6 +19,9 @@ Configured with a root user and sample database.
 #### Zookeeper
 Apache Zookeeper for coordinating distributed systems.
 
+NOTE for Apple Silicon, install rosetta and update to the latest docker
+softwareupdate --install-rosetta
+
 #### Kafka
 Apache Kafka broker for building real-time streaming data pipelines.
 

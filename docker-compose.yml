@@ -19,7 +19,9 @@ services:
       - kafka-net
 
   zookeeper:
-    image: wurstmeister/zookeeper
+    image: bitnami/zookeeper
+    environment:
+      ALLOW_ANONYMOUS_LOGIN: yes
     ulimits:
       nofile:
         soft: 65536
@@ -31,7 +33,7 @@ services:
       - kafka-net
 
   kafka:
-    image: wurstmeister/kafka
+    image: bitnami/kafka
     container_name: kafka
     ports:
       - "9092:9092"
