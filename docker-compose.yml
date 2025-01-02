@@ -64,7 +64,7 @@ services:
       - kafka
       - zookeeper
     volumes:
-      - ./debezium-connector-mysql/debezium-connector-mysql-2.5.3.Final.jar:/kafka/connect/debezium-connector-mysql.jar
+      - ./debezium-connector-mysql/debezium-connector-mysql-3.0.5.Final-plugin.tar.gz:/kafka/connect/debezium-connector-mysql.jar
     networks:
       - kafka-net
 
